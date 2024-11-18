@@ -27,10 +27,10 @@ def my_function():
 
 default_args = {
     'owner': 'airflow',
-    'start_date': datetime(2023, 7, 19),
+    'start_date': datetime(2024, 11, 18, 11, 44),
 }
 
-dag = DAG('python_operator_dag', default_args=default_args, schedule_interval='@daily')
+dag = DAG('paskal', default_args=default_args, schedule_interval='@daily')
 
 python_task = PythonOperator(
     task_id='python_task',
